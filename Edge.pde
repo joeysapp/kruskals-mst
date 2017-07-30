@@ -24,6 +24,7 @@ class Edge {
     strokeWeight(1.1);
     stroke(map(n, 0, 1, 125, 175), 255, 200);
     line(n1.pos.x, n1.pos.y, n1.pos.z, n2.pos.x, n2.pos.y, n2.pos.z);
+    // Lerp display. Pretty cool
     //strokeWeight(2);
     //stroke(0, 255, 0);
     //for (int i = 0 ; i <= 5; i++){
@@ -31,7 +32,6 @@ class Edge {
     //  float y = lerp(n1.pos.y, n2.pos.y, i/5.0); 
     //  float z = lerp(n1.pos.z, n2.pos.z, i/5.0); 
     //  point(x, y, z);
-      
     //}
   }
   
@@ -44,7 +44,4 @@ class Edge {
     return false;
     
   }
-  
-  
-  
 }

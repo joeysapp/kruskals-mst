@@ -155,7 +155,6 @@ class Tree {
       s = queue.remove();
       for (Node n : getAdjacentNodes(s)) {
         //stroke(0, 255, 0);
-
         //line(s.pos.x, s.pos.y, s.pos.z, d.pos.x, d.pos.y, d.pos.z);
         if (n == d) {
           return true;
@@ -187,16 +186,9 @@ class Tree {
     return adj_nodes;
   }
 
-
-
-
-
   void displayMST() {
     for (Edge e : mst) {
       e.display(color(255));
-    }
-    for (Node n : mst_nodes) {
-      //n.display(color(0));
     }
   }
 
